@@ -1,0 +1,26 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volnix/personal-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volnix/personal-site/issues"
+  },
+  "homepage": "https://github.com/volnix/personal-site#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery.cookie": "^1.4.1",
+    "lightbox2": "^2.11.0",
+    "particles.js": "^2.0.0"
+  }
+}

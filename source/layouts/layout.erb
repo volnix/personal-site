@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Nick Volgas</title>
+    
+    <!-- CSS -->
+    <!-- Bootstrap 4.3.1 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <!-- Site CSS-->
+    <%= stylesheet_link_tag "site" %>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+
+</head>
+
+<body>
+
+        <%= yield %>
+        <footer>
+        <div class="container"> 
+            <div class="row">
+            <div class="col-md-6">
+                <p class="mb-md-0 text-center cpr">&copy; 2019 Nick Volgas</p>
+            </div>
+            <div class="col-md-6">
+                <p class="social text-center">
+                  <a href="https://www.facebook.com/nick.volgas" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/nickavee" target="_blank" title="" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:n.volgas@gmail.com" class="email"><i class="fa fa-envelope"></i></a>
+                  <a href="https://github.com/volnix" target="_blank" class="github"><i class="fa fa-github" style="font-size: 2.7rem;"></i></a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <%= javascript_include_tag "jquery.cookie.js" %>
+    <%= javascript_include_tag "lightbox.min.js" %>
+    <%= javascript_include_tag "particles.js" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <%= javascript_include_tag "site" %>
+
+</body>
+
+</html>
