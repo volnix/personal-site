@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="utf-8">
+  <title>Nick Volgas</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="nick volgas" name="description">
 
-    <!-- Title  -->
-    <title>Nick Volgas</title>
-    
-    <!-- CSS -->
-    <!-- Bootstrap 4.3.1 -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-    <!-- Site CSS-->
-    <%= stylesheet_link_tag "site" %>
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
 
+  <!-- Supporting libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <%= stylesheet_link_tag "site" %>
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
 
 <body>
 
-        <%= yield %>
-        <footer>
-        <div class="container"> 
-            <div class="row">
-            <div class="col-md-6">
-                <p class="mb-md-0 text-center cpr">&copy; 2019 Nick Volgas</p>
-            </div>
-            <div class="col-md-6">
-                <p class="social text-center">
-                  <a href="https://www.facebook.com/nick.volgas" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/nickavee" target="_blank" title="" class="instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="mailto:n.volgas@gmail.com" class="email"><i class="fa fa-envelope"></i></a>
-                  <a href="https://github.com/volnix" target="_blank" class="github"><i class="fa fa-github" style="font-size: 2.7rem;"></i></a>
-                </p>
-            </div>
-            </div>
-        </div>
-    </footer>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
 
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    <%= javascript_include_tag "jquery.cookie.js" %>
-    <%= javascript_include_tag "lightbox.min.js" %>
-    <%= javascript_include_tag "particles.js" %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <%= javascript_include_tag "site" %>
+      <div id="logo" class="pull-left">
+        <a href="#"><img src="images/NV.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <%= yield %>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <%= javascript_include_tag "lib/jquery/jquery.min.js" %>
+  <%= javascript_include_tag "lib/jquery/jquery-migrate.min.js" %>
+  <%= javascript_include_tag "lib/bootstrap/js/bootstrap.bundle.min.js" %>
+  <%= javascript_include_tag "lib/easing/easing.min.js" %>
+  <%= javascript_include_tag "lib/wow/wow.min.js" %>
+  <%= javascript_include_tag "lib/waypoints/waypoints.min.js" %>
+  <%= javascript_include_tag "lib/counterup/counterup.min.js" %>
+  <%= javascript_include_tag "lib/superfish/hoverIntent.js" %>
+  <%= javascript_include_tag "lib/superfish/superfish.min.js" %>
+
+  <!-- Template Main Javascript File -->
+  <%= javascript_include_tag "site" %>
 
 </body>
-
 </html>
