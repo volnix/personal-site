@@ -1,0 +1,57 @@
+/*
+  Theme Name: Regna
+  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import "animate";
+@import "theme";
+
+#header {
+  #logo {
+    img {
+      max-width: 2rem;
+    }
+  }
+}
+
+#portfolio {
+  div.portfolio-item {
+    div.details {
+      background: rgba(52, 59, 64, 0.6);
+    }
+  
+    img.portfolio-img {
+      max-width: 25rem;
+    }
+  }
+}
+
+#about {
+  .about-container {
+    .background img {
+      max-height: 25rem;
+      margin-left: 4rem;
+    }
+
+    div.skill-icon {
+      img.skill-img {
+        width: 100%;
+      }
+    }
+  
+    div.skill-info {
+      h4.title {
+        margin-left: .5rem;
+      }
+    
+      p.description {
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+

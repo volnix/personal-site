@@ -15,13 +15,15 @@
 
   <!-- Supporting libraries -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/f414b8cf4d.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  
 
   <!-- Main Stylesheet File -->
-  <%= stylesheet_link_tag "site" %>
+  <link href="/stylesheets/backpages.css" rel="stylesheet" />
 
   <!-- =======================================================
     Theme Name: Regna
@@ -50,56 +52,62 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/running.html">Running</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
-  <%= yield %>
+    <main id="main">
+
+    <section id="running">
+      <div class="container">
+        <div class="row running-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Marathon Training</h2>
+            <div id="calendar"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <!--==========================
     Footer
   ============================-->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/nick.volgas" class="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/nickavee/" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/nick-volgas-b64220a0" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/volnix" class="github"><i class="fab fa-github"></i></a>
+      <a href="mailto:n.volgas@gmail.com" class="github"><i class="fa fa-envelope"></i></a>
     </div>
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <%= javascript_include_tag "lib/jquery/jquery.min.js" %>
-  <%= javascript_include_tag "lib/jquery/jquery-migrate.min.js" %>
-  <%= javascript_include_tag "lib/bootstrap/js/bootstrap.bundle.min.js" %>
-  <%= javascript_include_tag "lib/easing/easing.min.js" %>
-  <%= javascript_include_tag "lib/wow/wow.min.js" %>
-  <%= javascript_include_tag "lib/waypoints/waypoints.min.js" %>
-  <%= javascript_include_tag "lib/counterup/counterup.min.js" %>
-  <%= javascript_include_tag "lib/superfish/hoverIntent.js" %>
-  <%= javascript_include_tag "lib/superfish/superfish.min.js" %>
+
+  <script src="/javascripts/lib/jquery/jquery.min.js"></script>
+  <script src="/javascripts/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="/javascripts/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascripts/lib/easing/easing.min.js"></script>
+  <script src="/javascripts/lib/wow/wow.min.js"></script>
+  <script src="/javascripts/lib/waypoints/waypoints.min.js"></script>
+  <script src="/javascripts/lib/counterup/counterup.min.js"></script>
+  <script src="/javascripts/lib/superfish/hoverIntent.js"></script>
+  <script src="/javascripts/lib/superfish/superfish.min.js"></script>
 
   <!-- Template Main Javascript File -->
-  <%= javascript_include_tag "site" %>
+  <script src="/javascripts/site.js"></script>
+
+  <!-- Calendar stuff -->
+  # <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+  # <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+  <script src="/javascripts/calendar.js"></script>
 
 </body>
 </html>

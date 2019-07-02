@@ -7,8 +7,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import "./lib/animate.scss";
-@import "./lib/main-theme.scss";
+@import "theme";
+
+#running {
+  margin-top: 8rem;
+
+  .title {
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
 
 #header {
   #logo {
@@ -16,4 +25,21 @@
       max-width: 2rem;
     }
   }
+
+  background: rgba(52, 59, 64, 0.9);
+  padding: 20px 0;
+  height: 72px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio-item {
+  img {
+    max-width: 30rem;
+  }
+}
+
+#calendar {
+  height: 30rem;
+  width: 75rem;
 }
