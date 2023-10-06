@@ -1,0 +1,23 @@
+section#skills {
+    background-color: #1f1f1f;
+    min-height: 25rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    #skills-heading {
+        color: #e9d5a1;
+        @include heading;
+        font-weight: 100;
+        letter-spacing: 6px !important;;
+        margin-bottom: 2rem;
+    }
+
+    .tile {
+        background-color: rgba(248,245,244,.05);
+        padding: 10px 10px 5px;
+        width: 100px;
+        margin: 5px 0;
+        border-radius: 8px;
+        text-align: center;
+    }
+}

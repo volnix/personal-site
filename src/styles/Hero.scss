@@ -1,0 +1,37 @@
+#hero {
+    text-align: center;
+    // padding-top: 18rem;
+    color: whitesmoke;
+    max-width: none;
+    min-width: 100%;
+
+    @media (max-width: 576px) {
+        padding-top: 8rem;
+    }
+
+    @media (min-width: 577px) {
+        padding-top: 18rem;
+    }
+
+    #hero-inner {
+        @media (max-width: 576px) {
+            padding-top: 5rem;
+        }
+    }
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 5rem;
+    }
+
+    p#subtitle {
+        font-size: 1.25rem;
+        min-height:2rem;
+    }
+
+    background: url(../../public/bg-om.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

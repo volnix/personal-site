@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./styles/mixins.scss";
+@import "./styles/Hero.scss";
+@import "./styles/About.scss";
+@import "./styles/Skills.scss";
+@import "./styles/Resume.scss";
+
+body {
+    // background-color: rgba(11, 23, 22, 0.9);
+    background-color: transparent;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.center {
+    text-align: center;;
+}
+
+

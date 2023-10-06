@@ -1,0 +1,48 @@
+#about {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: #e9d5a1;
+    
+    h2#about-heading {
+        color: black;
+        margin-bottom: 4rem;
+        @include heading;
+    }
+
+    .polaroid img {
+        display: block;
+        max-width: 300px;
+    }
+    
+    .polaroid span {
+        background: #ffffff;
+        display: inline-block;
+        // margin: 55px 75px 30px;
+        padding: 15px 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -webkit-transition: all .20s linear;
+        -moz-transition: all .20s linear;
+        transition: all .20s linear;
+        z-index: 0;
+        position: relative;
+    }
+
+    .card-body {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: left;
+        font-weight: 100;
+        
+        span.hi {
+            font-size: 1.55rem;
+        }
+
+        #about-text {
+            font-size: 1.1rem;
+        }
+        
+    }
+}
